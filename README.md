@@ -11,6 +11,26 @@ docker-compose up -d
 
 O docker foi configurado para executar no localhost na porta 8001. Dessa forma, ao criar o container, a aplicação estará disponível nesse ip e porta.
 
+# Rodando Migrações
+Para executar as migrações, basta listar os containers ativos com o comando:
+```docker
+docker ps
+```
+
+Em seguida procurar pelo container com nome
+```text
+desafio_fullstack_app
+```
+
+E então, entre no container através do comando:
+```docker
+docker exec -it {id do container} bash
+```
+E em seguida basta executar o comando:
+```laravel
+php artisan migrate
+```
+
 ## Rotas
 | rota                               | descrição                                                |
 |------------------------------------|----------------------------------------------------------|
