@@ -22,13 +22,9 @@ Em seguida procurar pelo container com nome
 desafio_fullstack_app
 ```
 
-E então, entre no container através do comando:
+E então, entre execute o comando de migrate com o nome do container:
 ```docker
-docker exec -it {id do container} bash
-```
-E em seguida basta executar o comando:
-```laravel
-php artisan migrate
+docker exec desafio_fullstack_app php artisan migrate
 ```
 
 ## Rotas
