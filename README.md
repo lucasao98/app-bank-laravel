@@ -15,4 +15,13 @@ O docker foi configurado para executar no localhost na porta 8001. Dessa forma, 
 | rota                               | descrição                                                |
 |------------------------------------|----------------------------------------------------------|
 | <kbd>GET / </kbd>                  | Rota responsável pela tela de login                      |
-| <kbd>GET /login </kbd>             | Responsável pela verificação de usuário, para prosseguir |
+| <kbd>POST /login </kbd>            | Responsável pela verificação de usuário, para prosseguir |
+| <kbd>GET /logout </kbd>            | Responsável por limpar a sessão do usuário atual         |
+| <kbd>GET /signup/ </kbd>           | Renderiza a tela de cadastro de novos usuário no sistema |
+| <kbd>POST /signup/store </kbd>     | Realiza o cadastro do usuário no sistema caso todos os requisitos tenham sidos cumpridos |
+| <kbd>GET /dashboard/ </kbd>        | Renderiza a tela de dashboard dos clientes com algumas informações                       |
+| <kbd>GET /dashboard/bank_transfer </kbd>  | Renderiza a tela de transferências                                                |
+| <kbd>GET /dashboard/bank_statement </kbd> | Renderiza a tela de extrato do usuário logado                                     |
+| <kbd>GET /dashboard/bank_deposit </kbd>   | Renderiza a tela de depósito                                                      |
+| <kbd>POST /operations/deposit </kbd>      | Responsável por fazer validações de depósito antes de efetuar a operação em si    |
+| <kbd>POST /operations/transfer </kbd>     | Responsável por fazer validações de depósito antes de efetuar a operação em si    |
